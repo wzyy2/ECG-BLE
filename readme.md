@@ -1,26 +1,29 @@
 # ECG-BLE
-This repository contains hardware designs and software for my graduate project.
+This repository contains hardware designs and software for my graduate project.<br>
 Any issues or improvements please contact jacob-chen@iotwrt.com.
 
 ## Introduction
 ### 设计
-TI CC2640 + ADS1191CC 心电前端 + ADXL335 三轴传感器
+TI CC2640 + ADS1191 心电前端 + ADXL335 三轴传感器
+
 ### 功能
 - 胸导联心电监测
 - 跌倒检测
+
 ### 外观
 
 ## About App交接
 
 ### 搜索、连接
-名称：`ECG-CH`
-//广播格式：
-以上主要用于搜索 连接设备，自行选择
+名称：`ECG-CH` <br>
+//广播格式：<br>
+以上主要用于搜索 连接设备，自行选择<br>
 不需要配对
 
 ### 服务
 只有一个Service
 Heartrate Service `uuid：0x180D`
+
 | Characteristic Name  | UUID | Mandatory Properties   |  Security Permissions |
 |  :----:  |:----: |  :----:  | :----:  |
 | Heart rate measurement  | 0x2A37 |  Notify | None   |
